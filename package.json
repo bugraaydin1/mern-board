@@ -1,0 +1,46 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "Kanban board server with Nodejs, Express, Mongo, Apollo Graphql",
+	"main": "app.js",
+	"engines": {
+		"npm": "6.14.x",
+		"node": "14.17.x"
+	},
+	"scripts": {
+		"start": "node app.js",
+		"dev": "nodemon app.js",
+		"serve": "node app.js",
+		"build": "webpack",
+		"heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"kanban",
+		"nodejs",
+		"express",
+		"mongodb",
+		"graphql"
+	],
+	"author": "Ahmet Buğra Aydın <bugraaydin1@hotmail.com> (https://github.com/bugraaydin1)",
+	"license": "MIT",
+	"dependencies": {
+		"apollo-server": "^3.5.0",
+		"apollo-server-core": "^3.5.0",
+		"apollo-server-express": "^3.5.0",
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-session": "^1.17.2",
+		"graphql": "^16.0.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.12",
+		"mongoose-findorcreate": "^3.0.0",
+		"passport": "^0.5.0",
+		"passport-google-oauth20": "^2.0.0",
+		"passport-local": "^1.0.0",
+		"passport-local-mongoose": "^6.1.0",
+		"validator": "^13.7.0"
+	}
+}

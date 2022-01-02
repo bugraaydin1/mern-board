@@ -1,0 +1,14 @@
+# backend 
+.env
+node_modules
+nodemon.json
+
+# custom
+node_modules/
+.vscode/
+*.orig
+.idea/
+.DS_Store
+workspace.code-workspace
+
+nodemon.json

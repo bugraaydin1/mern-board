@@ -1,0 +1,43 @@
+{
+	"name": "Mern Board",
+	"description": "Kanban board app using MERN stack + Apollo Graphql",
+	"repository": "https://github.com/bugraaydin1/mern-board",
+	"logo": "https://mern-board.herokuapp.com/mern-board.png",
+	"keywords": ["kanban", "nodejs", "express", "mongodb", "graphql"],
+	"env": {
+		"MONGODB_URI": {
+			"description": "Connection uri string obtained from https://cloud.mongodb.com/ after creating your database",
+			"required": true
+		},
+		"JWT_SECRET_KEY": {
+			"description": "Secret for create/check validity of json web tokens",
+			"generator": "secret",
+			"required": true
+		},
+		"SESSION_SECRET": {
+			"description": "Secret for create sessions",
+			"generator": "secret",
+			"required": true
+		},
+		"GOOGLE_LOGIN_CLIENT_ID": {
+			"description": "Client Id from https://developers.google.com/identity/sign-in/web/sign-in"
+		},
+		"GOOGLE_LOGIN_CLIENT_SECRET": {
+			"description": "Client Secret from https://developers.google.com/identity/sign-in/web/sign-in"
+		},
+		"APOLLO_KEY": {
+			"description": "APOLLO_KEY from https://studio.apollographql.com/",
+			"required": true
+		},
+		"APOLLO_GRAPH_ID": {
+			"description": "APOLLO_GRAPH_ID from https://studio.apollographql.com/",
+			"required": true
+		},
+		"APOLLO_GRAPH_VARIANT": { "value": "current", "required": true },
+		"APOLLO_SCHEMA_REPORTING": { "value": "true", "required": true },
+		"CORS_ALLOW": {
+			"description": "Url to CORS allow. Required if backend and frontend served on different hosts. Ex: https://[your-app-name].herokuapp.com"
+		},
+		"NODE_ENV": "development"
+	}
+}

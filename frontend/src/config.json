@@ -1,0 +1,6 @@
+{
+	"baseApiUrl": "/",
+	"graphqlUrl": "http://mern-board.herokuapp.com/graphql",
+	"localBaseApiUrl": "//localhost:4000/",
+	"localGraphqlUrl": "//localhost:4000/"
+}
